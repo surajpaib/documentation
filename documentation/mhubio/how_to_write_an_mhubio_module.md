@@ -309,7 +309,7 @@ class MyModule(Module):
    def task(self, instance: Instance, in_datas: InstanceDataCollection, out_datas: InstanceDataCollection):
      
       # loop over all in_data-out_data pairs
-      for i, in_data in enumerated(in_datas):
+      for i, in_data in enumerate(in_datas):
          out_data = out_datas.get(i)
       
          # conversion 
